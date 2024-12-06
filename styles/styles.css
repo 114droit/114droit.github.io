@@ -1,3 +1,12 @@
 body {
     background-color: #b9d3ee;
 }
+
+.navigation {
+    list-style-type: none;
+}
+
+.navigation>li>a {
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
