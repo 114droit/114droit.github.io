@@ -6,7 +6,7 @@ body {
 .navigation {
     list-style-type: none;
     padding-top: 100px;
-    padding-left: 600px;
+    padding-left: 1300px;
 }
 
 .navigation>li {
@@ -16,6 +16,7 @@ body {
 
 .navigation>li>a {
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
     text-decoration: none;
     color: #6959cd;
 }
@@ -24,4 +25,9 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     text-decoration: none;
     color: #473c8b;
+}
+
+.bar {
+    color:#b9d3ee;
+    background-color: #6959cd;
 }
