@@ -1,12 +1,27 @@
 body {
     background-color: #b9d3ee;
+    opacity: 0,6;
 }
 
 .navigation {
     list-style-type: none;
+    padding-top: 100px;
+    padding-left: 600px;
+}
+
+.navigation>li {
+    padding-top: 1px;
+    padding-bottom: 1px;
 }
 
 .navigation>li>a {
     font-family: Arial, Helvetica, sans-serif;
     text-decoration: none;
+    color: #6959cd;
+}
+
+.navigation>li>a:hover {
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: #473c8b;
 }
