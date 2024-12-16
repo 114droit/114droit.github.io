@@ -10,17 +10,29 @@
         <h1>Meine To-Do-Liste</h1>
         <div class="todo-app">
             <form action="">
-                <!-- <label>Aufgabe hinzufügen:</label> -->
-                <input type="text" class="todo-input" value="Neue Aufgabe">
-                <input type="submit" value="Hinzufügen" class="add-button">
+                <label>Neue Aufgabe:</label>
+                <input type="text" class="todo-input" value="Aufgabe">
+                <!-- <button type="submit" class="add-button">Hinzufügen</button> -->
+                <input type="submit" value="Hinzufügen" class="add-button" aria-label="Aufgabe hinzufügen">
             </form>
         </div>
-            <ul class="todo-list">
-                <li><input type="checkbox"><span>Aufgabentext</span><button type="submit">Löschen</button></li>
-                <li><input type="checkbox"><span>Aufgabentext</span><button type="submit">Löschen</button></li>
-            </ul>
+        <div class="todo-list">
+        <ul>
+            <li>
+            <!-- <label>Aufgabe erledigt:</label> -->                    <input type="checkbox" aria-label="Aufgabe erledigen">
+                <span>Aufgabentext</span>
+                <button type="submit" aria-label="Aufgabe löschen">Löschen</button>
+            </li>
+            <li>
+                <!-- <label>Aufgabe erledigt:</label> -->                        <input type="checkbox" aria-label="Aufgabe erledigen">
+                <span>Aufgabentext</span>
+                <button type="submit" aria-label="Aufgabe löschen">Löschen</button>
+            </li>
+        </ul>
+        </div>
             <div class="todo-info">
-                
+                <p>Anzahl der offenen Aufgaben:</p>
             </div>
+        </div>
     </body>
-        </html>
+</html>
