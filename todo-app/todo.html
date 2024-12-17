@@ -5,35 +5,26 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="styles/style.css">
+        <script src="script.js" defer></script>
     </head>
     <body>
-        <h1>Meine To-Do-Liste</h1>
         <div class="todo-app">
-            <form action="">
+            <h1>Meine To-Do-Liste</h1>
+            <form class="todo-form" id="todo-form" action="">
                 <label>Neue Aufgabe:</label>
-                <input type="text" class="todo-input" value="Aufgabe">
+                <input type="text" id="todo-input" class="todo-input" placeholder="Aufgabe">
                 <!-- <button type="submit" class="add-button">Hinzufügen</button> -->
                 <input type="submit" value="Hinzufügen" class="add-button" aria-label="Aufgabe hinzufügen">
             </form>
-        </div>
-        <div class="todo-list">
-            <ul>
+            <ul id="todo-list" class="todo-list">
                 <li>
                     <!-- <label>Aufgabe erledigt:</label> -->                    
-                    <input type="checkbox" aria-label="Aufgabe erledigen">
+                    <input type="checkbox" aria-label="Aufgabe erledigen" id="todo-checkbox">
                     <span>Aufgabentext</span>
-                    <button type="submit" aria-label="Aufgabe löschen">Löschen</button>
-                </li>
-                <li>
-                    <!-- <label>Aufgabe erledigt:</label> -->                        
-                    <input type="checkbox" aria-label="Aufgabe erledigen">
-                    <span>Aufgabentext</span>
-                    <button type="submit" aria-label="Aufgabe löschen">Löschen</button>
+                    <button type="submit" aria-label="Aufgabe löschen" id="todo-delete">Löschen</button>
                 </li>
             </ul>
-        </div>
-        <div class="todo-info">
-            <p>Anzahl der offenen Aufgaben:</p>
+            <div class="todo-info">Anzahl der offenen Aufgaben:</div>
         </div>
     </body>
 </html>

@@ -51,32 +51,32 @@ h1 {
     padding: 10px 20px;
 }
 
-.todo-list>ul {
+.todo-list {
     display: flex;
     list-style: none;
     gap:10px;
     font-size: 1rem;
 }
 
-.todo-list>ul>li {
+.todo-list>li {
     margin-bottom: 10px;
 }
 
-.todo-list>ul>li>span {
+.todo-list>li>span {
     background-color: #f9f9f9;
     border-radius: 5px;
     padding: 10px;
 }
 
-.todo-list>ul>li>input[type="checkbox"] {
+.todo-list>li>input[type="checkbox"] {
     margin-right: 10px;
 }
 
-.todo-list>ul>li>input[type="checkbox"]:checked+span {
+.todo-list>li>input[type="checkbox"]:checked+span {
     text-decoration: line-through;
 }
 
-.todo-list>ul>li>button[type="submit"] {
+.todo-list>li>button[type="submit"] {
     background-color: #d9534f;
     color: #ffffff;
     border-radius: 5px;
@@ -84,7 +84,7 @@ h1 {
     padding: 5px;
 }
 
-.todo-list>ul>li>button[type="submit"]:hover {
+.todo-list>li>button[type="submit"]:hover {
     background-color: #c9302c;
     padding: 5px 10px;
 }
