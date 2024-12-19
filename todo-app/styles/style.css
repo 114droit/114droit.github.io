@@ -88,3 +88,10 @@ h1 {
     background-color: #c9302c;
     padding: 5px 10px;
 }
+
+.todo-info {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #666666;
+    margin-top: 20px;
+}
