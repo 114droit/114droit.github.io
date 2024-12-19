@@ -9,7 +9,7 @@ const todoDel = document.getElementById("todo-delete");
 let toDos = [];
 
 //Eventlistener, der auf das klicken des Hinzufügen Knopfes reagieren soll
-todoForm.addEventListener ("click", (event) => {
+todoForm.addEventListener ("submit", (event) => {
     // verhindert neu laden der seite durch Formular
     event.preventDefault();
     // Falls input leer beenden der Funktion mit return, damit keine überflüssigen Manipulationen am DOM ausgeführt werden
@@ -24,20 +24,26 @@ todoForm.addEventListener ("click", (event) => {
         todoText: todo,
         id: Date.now()
     };
-    // pushen des objektes in das oben definierte array toDos
+    // pushen des Objektes in das oben definierte array toDos
     toDos.push(todoData);
     // eingabefeld leeren
     todoInput.value = "";
+    // console.log(toDos);
     createList();
 });
 
 // Funktion zum rendern der todos
 function createList() {
-    for (todoData in toDos) {
-    const li = document.createElement("li");
-    const checkbox = document.createElement("input type="checkbox"");
-    todoList.appendChild(li);
-    };
+    todoList.innerHTML = "";
+    toDos.forEach(todoData => {
+        const li = document.createElement("li");
+        const span = document.createElement("span");
+        span.innerHTML = todoData.todoText;
+        // span.textContent = todoData.todoText;
+        li.appendChild(span);
+        todoList.appendChild(li);
+        li.classList.add("todo-list");
+    });
 };
 
 console.log(toDos);
